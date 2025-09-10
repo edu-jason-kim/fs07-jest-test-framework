@@ -1,8 +1,8 @@
-// import { isPassingScore } from "./2.grade";
+import { isPassingScore } from "./2.grade";
 
-describe.skip("부정 matcher", () => {
+describe("부정 matcher", () => {
   // toBeTruthy, toBeFalsy
-  describe.skip("isPassingScore 함수 테스트", () => {
+  describe("isPassingScore 함수 테스트", () => {
     test("55점 이상은 Pass (true)", () => {
       expect(isPassingScore(55)).toBeTruthy();
       expect(isPassingScore(70)).toBeTruthy();
@@ -17,12 +17,12 @@ describe.skip("부정 matcher", () => {
   });
 
   // toBe, toEqual
-  test.skip("toBe vs toEqual", () => {
+  test("toBe vs toEqual", () => {
     const obj1 = { a: 1 };
     const obj2 = { a: 1 };
 
     expect(obj1).toEqual(obj2); // 통과
-    expect(obj1).toBe(obj2); // 실패 (참조가 다름)
+    // expect(obj1).toBe(obj2); // 실패 (참조가 다름)
   });
 
   test("test not to be", () => {

@@ -1,6 +1,6 @@
 import hello from "./1.hello";
 
-describe.skip("hello 함수 테스트", () => {
+describe("hello 함수 테스트", () => {
   test("Hello Jest를 반환해야 한다.", () => {
     const value = hello();
 

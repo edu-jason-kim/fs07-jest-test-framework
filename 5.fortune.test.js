@@ -9,7 +9,7 @@ function getFortuneString(date) {
   return FORTUNES[year % 3];
 }
 
-describe.skip("mock fortune", () => {
+describe("mock fortune", () => {
   const mockGetFullYear = jest.fn(() => 2025);
 
   test("mock 운세", () => {
@@ -22,7 +22,7 @@ describe.skip("mock fortune", () => {
   });
 });
 
-describe.skip("spy fortune", () => {
+describe("spy fortune", () => {
   test("spy 운세", () => {
     jest.spyOn(Date.prototype, "getFullYear");
     const result = getFortuneString(new Date()); // getFullYear -> 2025

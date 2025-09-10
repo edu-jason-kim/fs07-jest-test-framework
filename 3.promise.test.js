@@ -9,7 +9,7 @@ async function getAvatars() {
   }
 }
 
-describe.skip("getAvatars 함수 테스트", () => {
+describe("getAvatars 함수 테스트", () => {
   test.skip("네트워크에서 아바타 데이터를 불러온다. (then, catch)", (done) => {
     getAvatars()
       .then((data) => {
@@ -27,7 +27,7 @@ describe.skip("getAvatars 함수 테스트", () => {
     expect(data).toBeDefined();
   });
 
-  test.skip("에러케이스", async () => {
+  test("에러케이스", async () => {
     // expect가 총 1회 호출돼야 함
     expect.assertions(1);
 
